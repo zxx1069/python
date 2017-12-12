@@ -1,0 +1,12 @@
+def benjinhe(principal,rate,year):
+    newprincipal=principal*(1+rate/100*year)
+    principal=newprincipal
+    return principal
+
+def main():
+    amount=eval(input("请输入本金："))
+    rate=eval(input("请输入利率："))
+    year=eval(input("请输入年份："))
+    amount=benjinhe(amount,rate,year)
+    print(str.format("本金利率和为：{0:2.2f}",amount))
+main()
