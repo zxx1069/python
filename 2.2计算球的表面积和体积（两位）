@@ -1,0 +1,8 @@
+#!usr/bin/env python
+# -*- coding:utf-8 -*-
+
+import math
+r=float(input("请输入球的半径："))
+S=4*math.pi*r**2
+V=4*math.pi*r**3/3
+print(str.format("球为表面积为：{0:2.2f}，体积为：{1:2.2f}",S,V))
